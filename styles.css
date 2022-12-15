@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-flex {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+}
+
+.container-grid {
+  width: 90%;
+  max-width: 1300px;
+  display: grid;
+}
+
+.btn-primary {
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
+.btn-primary a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 2px solid #4ee39d;
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: all 0.35s;
+  text-decoration: none;
+}
+.btn-primary a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4ee39d;
+  transition: all 0.4s;
+}
+.btn-primary a button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-primary:hover ::after {
+  width: 100%;
+}
+.btn-primary:hover button {
+  color: #000;
+  transition: 0.2s;
+}
+@media screen and (min-width: 500px) {
+  .btn-primary {
+    width: 225px;
+  }
+  .btn-primary a {
+    width: 225px;
+  }
+}
+
+.btn-secundary {
+  width: 100%;
+  display: grid;
+  place-items: end;
+}
+.btn-secundary a {
+  display: block;
+  padding-block-end: 5px;
+  border-bottom: 2px solid #4ee39d;
+  display: grid;
+  place-items: center;
+  position: relative;
+  text-decoration: none;
+}
+.btn-secundary a button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-secundary:hover button {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+.btn-secundary input {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-weight: 500;
+  padding-block-end: 5px;
+  border-bottom: 2px solid #4ee39d;
+}
+.btn-secundary input:hover {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+@media screen and (min-width: 500px) {
+  .btn-secundary a button, .btn-secundary input {
+    font-size: 1.2rem;
+  }
+}
+
+header {
+  width: 100%;
+  padding-block-start: 162px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(0deg, #111 50%, #434343 150.02%);
+  position: relative;
+}
+header .container-flex {
+  flex-direction: column;
+  align-items: center;
+}
+header .container-flex nav {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+}
+header .container-flex nav ul {
+  display: flex;
+  gap: 35px;
+}
+header .container-flex nav ul li a {
+  display: flex;
+}
+header .container-flex nav ul li a i {
+  font-size: 2rem;
+}
+header .container-flex nav ul li:hover i {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+header .container-flex .hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block-end: 65px;
+  border-bottom: 1px solid #cecece;
+}
+header .container-flex .hero .hero-text {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+header .container-flex .hero .hero-text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+header .container-flex .hero .hero-text h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 500px) {
+  header .container-flex .hero .hero-text {
+    gap: 0;
+  }
+  header .container-flex .hero .hero-text h1 {
+    font-size: 3rem;
+  }
+  header .container-flex .hero .hero-text h2 {
+    font-size: 2rem;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  margin-block-start: 65px;
+}
+main .xp {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main .xp > div {
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-block-end: 65px;
+  border-bottom: 1px solid #cecece;
+}
+main .xp > div .level {
+  display: grid;
+  place-items: center;
+}
+main .xp > div .level h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .xp > div .level p {
+  color: #cecece;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 500px) {
+  main .xp > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  main .xp > div .level h2, main .xp > div .level p {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .xp > div {
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: none;
+    padding-block-end: 0;
+  }
+}
+main .portfolio {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main .portfolio > div {
+  flex-direction: column;
+}
+main .portfolio > div .portfolio-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .portfolio > div .portfolio-header h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 500px) {
+  main .portfolio > div .portfolio-header h2 {
+    font-size: 3rem;
+  }
+}
+main .portfolio > div .portfolio-content {
+  width: 100%;
+  display: grid;
+  place-items: start;
+  gap: 30px;
+  margin-block-start: 30px;
+}
+main .portfolio > div .portfolio-content a {
+  display: grid;
+  place-items: center;
+}
+main .portfolio > div .portfolio-content a figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .portfolio > div .portfolio-content a figure img {
+  width: 100%;
+  min-width: 100%;
+}
+main .portfolio > div .portfolio-content a figure figcaption {
+  width: 100%;
+  font-size: 1.7rem;
+  margin-block-start: 15px;
+}
+main .portfolio > div .portfolio-content a figure .tec {
+  display: flex;
+  gap: 15px;
+}
+main .portfolio > div .portfolio-content a figure .tec p {
+  color: #cecece;
+}
+main .portfolio > div .portfolio-content a:hover > figure > figcaption {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+@media screen and (min-width: 500px) {
+  main .portfolio > div .portfolio-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .portfolio > div .portfolio-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+main #contact {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-block-start: 65px;
+  background-color: #242424;
+}
+main #contact > div {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-block-end: 65px;
+  border-bottom: 1px solid #cecece;
+}
+main #contact > div .contact-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main #contact > div .contact-content h2, main #contact > div .contact-content p {
+  text-align: center;
+}
+main #contact > div .contact-content h2 {
+  font-size: 2rem;
+  max-width: 700px;
+}
+main #contact > div .contact-content p {
+  color: #cecece;
+}
+main #contact > div form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #contact > div form textarea {
+  resize: none;
+}
+main #contact > div form > input, main #contact > div form > textarea {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #cecece;
+}
+main #contact > div form > input::placeholder, main #contact > div form > textarea::placeholder {
+  color: #cecece;
+}
+@media screen and (min-width: 500px) {
+  main #contact > div .contact-content h2 {
+    font-size: 2.5rem;
+  }
+  main #contact > div .contact-content p {
+    font-size: 1.2rem;
+  }
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-block: 65px;
+  background-color: #242424;
+}
+footer > div {
+  place-items: center;
+  gap: 20px;
+}
+footer > div h2 {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  transition: easy-out 0.3s;
+}
+footer > div h2::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  transition: all 0.3s;
+  background-color: #4ee39d;
+}
+footer > div h2:hover {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+footer > div h2:hover::after {
+  width: 100%;
+}
+footer > div ul {
+  display: flex;
+  gap: 35px;
+}
+footer > div ul li a {
+  display: flex;
+}
+footer > div ul li a i {
+  font-size: 2rem;
+}
+footer > div ul li:hover i {
+  color: #4ee39d;
+  transition: 0.2s;
+}
+@media screen and (min-width: 500px) {
+  footer > div {
+    grid-template-columns: 1fr auto;
+    place-items: start;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

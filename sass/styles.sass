@@ -1,0 +1,358 @@
+@use 'v'
+@use 'm'
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Poppins', sans-serif
+  box-sizing: border-box
+  font-size: 1rem
+  font-weight: 400
+  text-decoration: none
+  color: v.$white
+
+html
+  scroll-behavior: smooth
+
+body
+  background: #111
+
+ul 
+  list-style: none
+
+.container-flex
+  @include m.containerFlex
+.container-grid
+  @include m.containerGrid
+
+.btn-primary
+  width: 200px
+  display: grid
+  place-items: center
+  a
+    display: block
+    width: 200px
+    height: 50px
+    border: 2px solid v.$green
+    display: grid
+    place-items: center
+    position: relative
+    transition: all .35s
+    text-decoration: none
+    &::after
+      position: absolute
+      content: ""
+      top: 0
+      left: 0
+      width: 0
+      height: 100%
+      background: v.$green
+      transition: all .4s
+    button
+      background-color: transparent
+      border: none
+      font-size: 1.4rem
+      position: relative
+      z-index: 2
+      cursor: pointer
+      font-weight: 500
+  &:hover
+    ::after
+      width: 100%
+    button
+      color: v.$black
+      transition: .2s
+  @include m.tablet
+    width: 225px
+    a
+      width: 225px
+
+.btn-secundary
+  width: 100%
+  display: grid
+  place-items: end
+  a
+    display: block
+    padding-block-end: 5px
+    border-bottom: 2px solid v.$green
+    display: grid
+    place-items: center
+    position: relative
+    text-decoration: none
+    button
+      background-color: transparent
+      border: none
+      font-size: 1rem
+      position: relative
+      z-index: 2
+      cursor: pointer
+      font-weight: 500
+  &:hover
+    button
+      color: v.$green
+      transition: .2s
+  input
+    background-color: transparent
+    border: none
+    font-size: 1rem
+    position: relative
+    z-index: 2
+    cursor: pointer
+    font-weight: 500
+    padding-block-end: 5px
+    border-bottom: 2px solid v.$green
+    &:hover
+      color: v.$green
+      transition: .2s
+  @include m.tablet
+    a button, input
+      font-size: 1.2rem
+
+
+// header
+header
+  width: 100%
+  padding-block-start: 162px
+  display: grid
+  place-items: center
+  background: v.$bg-header
+  position: relative
+  .container-flex
+    flex-direction: column
+    align-items: center
+    nav
+      @include m.containerFlex
+      justify-content: center
+      position: absolute
+      top: 65px
+      ul
+        display: flex
+        gap: 35px
+        li
+          a 
+            display: flex
+            i
+              font-size: 2rem
+          &:hover
+            i
+              color: v.$green
+              transition: .2s
+    .hero
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 50px
+      padding-block-end: 65px
+      border-bottom: 1px solid v.$gray
+      .hero-text
+        display: grid
+        place-items: center
+        gap: 20px
+        h1
+          color: v.$white
+          text-align: center
+          font-size: 2rem
+        h2
+          color: v.$white
+          text-align: center
+          font-size: 1.5rem
+      @include m.tablet
+        .hero-text
+          gap: 0
+          h1
+            font-size: 3rem
+          h2
+            font-size: 2rem
+      
+        
+
+// main
+main 
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 65px
+  margin-block-start:65px
+  .xp 
+    width: 100%
+    display: grid
+    place-items: center
+    > div
+      grid-template-columns: 1fr
+      gap: 30px
+      padding-block-end: 65px
+      border-bottom: 1px solid v.$gray
+      .level
+        display: grid
+        place-items: center
+        h2
+          color: v.$white
+          font-size: 2rem
+          font-weight: 500
+        p
+          color: v.$gray
+          font-size: 1.4rem
+    @include m.tablet
+      > div
+        grid-template-columns: 1fr 1fr
+        .level
+          h2, p
+            width: 100%
+    @include m.desktop
+      > div
+        grid-template-columns: repeat(3, 1fr)
+        border-bottom: none
+        padding-block-end: 0
+    
+  .portfolio
+    width: 100%
+    display: grid
+    place-items: center
+    > div
+      flex-direction: column
+      .portfolio-header
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        h2
+          color: v.$white
+          font-size: 2.2rem
+          font-weight: 500
+      @include m.tablet
+        .portfolio-header h2
+          font-size: 3rem
+      .portfolio-content
+        width: 100%
+        display: grid
+        place-items: start
+        gap: 30px
+        margin-block-start: 30px
+        a
+          display: grid
+          place-items: center
+          figure
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            img 
+              width: 100%
+              min-width: 100%
+            figcaption
+              width: 100%
+              font-size: 1.7rem
+              margin-block-start: 15px
+            .tec
+              display: flex
+              gap: 15px
+              p
+                color: v.$gray
+          &:hover > figure > figcaption
+            color: v.$green
+            transition: .2s
+      @include m.tablet
+        .portfolio-content
+          grid-template-columns: 1fr 1fr
+      @include m.desktop
+        .portfolio-content
+          grid-template-columns: repeat(3, 1fr)
+
+  #contact
+    width: 100%
+    display: grid
+    place-items: center
+    padding-block-start: 65px
+    background-color: v.$bg-contact
+    > div
+      flex-direction: column
+      align-items: center
+      gap: 30px
+      padding-block-end: 65px
+      border-bottom: 1px solid v.$gray
+      .contact-content
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        h2, p
+          text-align: center
+        h2
+          font-size: 2rem
+          max-width: 700px
+        p
+          color: v.$gray
+      form 
+        width: 100%
+        max-width: 500px
+        display: flex
+        flex-direction: column
+        gap: 20px
+        textarea
+          resize: none
+        > input, > textarea
+          padding: 10px 20px
+          background-color: transparent
+          border: none
+          border-bottom: 1px solid v.$gray
+          &::placeholder
+            color: v.$gray
+    @include m.tablet
+      > div .contact-content 
+        h2
+          font-size: 2.5rem
+        p
+          font-size: 1.2rem
+
+// footer
+footer 
+  width: 100%
+  display: grid
+  place-items: center
+  padding-block: 65px
+  background-color: v.$bg-contact
+  > div
+    place-items: center
+    gap: 20px
+    h2
+      font-size: 2rem
+      text-align: center
+      position: relative
+      transition: easy-out .3s
+      &::after
+        content: ''
+        display: flex
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 3px
+        width: 0
+        transition: all .3s
+        background-color: v.$green
+        
+      &:hover
+        color: v.$green
+        transition: .2s
+        &::after
+          width: 100%
+    ul
+      display: flex
+      gap: 35px
+      li
+        a 
+          display: flex
+          i
+            font-size: 2rem
+        &:hover
+          i
+            color: v.$green
+            transition: .2s
+  @include m.tablet
+    > div
+      grid-template-columns: 1fr auto
+      place-items: start
+
+    
+
+
