@@ -92,4 +92,20 @@ Reduzir a regularização: reduzir a intensidade dos termos de regularização o
 Em resumo, overfitting e underfitting são problemas comuns no treinamento de RNAs, mas podem ser solucionados com técnicas específicas de regularização, aumento ou redução da complexidade da RNA, melhoria da qualidade dos dados de treinamento e ajustes na intensidade da regularização.
 
 
+### Erros Questão 5
+
+#### alternativa a)
+O erro de 2,0% no conjunto de treinamento indica que o modelo não está se ajustando bem aos dados durante o processo de treinamento, ou seja, ele não está conseguindo aprender a relação entre os dados de entrada e saída. Isso sugere que o modelo está com um alto viés (bias), ou seja, ele está muito simplificado e não consegue representar de forma adequada a complexidade dos dados.
+
+Além disso, o erro de 2,1% no conjunto de teste indica que o modelo não está generalizando bem o conhecimento aprendido durante o treinamento, ou seja, ele não está conseguindo se adaptar a novos dados e está cometendo erros de classificação mesmo em dados que não foram usados durante o treinamento. Isso sugere que o modelo está com uma alta variância (overfitting), ou seja, ele está se ajustando demais aos dados de treinamento e não consegue generalizar o conhecimento para novos dados.
+
+Portanto, é necessário encontrar um equilíbrio entre o viés e a variância do modelo para obter uma boa performance em novos dados. Isso pode ser feito através de técnicas como ajuste de hiperparâmetros, aumento de dados, regularização, entre outras.
+
+#### alternativa b)
+
+Aumentar a base de treinamento é uma estratégia comum para lidar com o problema de overfitting em modelos de aprendizado de máquina, incluindo redes neurais. Overfitting ocorre quando o modelo se ajusta muito bem aos dados de treinamento, mas não consegue generalizar para novos dados. Isso pode levar a uma performance ruim em dados de teste ou aplicação.
+
+Ao aumentar a base de treinamento, o modelo tem acesso a mais exemplos de dados, o que pode ajudá-lo a aprender melhor as características que são relevantes para a tarefa em questão. Com mais dados, o modelo tem uma melhor chance de capturar a variabilidade dos dados e generalizar melhor para novos exemplos.
+
+No entanto, é importante notar que simplesmente aumentar o tamanho do conjunto de dados não é suficiente para garantir uma melhor performance do modelo. A qualidade dos dados é importante, bem como a distribuição dos dados de treinamento em relação aos dados de teste ou aplicação. É importante garantir que os dados de treinamento sejam representativos dos dados que o modelo encontrará na prática. Além disso, outras técnicas, como regularização e validação cruzada, podem ser usadas em conjunto com o aumento da base de treinamento para obter um modelo melhor regularizado e com uma melhor performance geral.
 
