@@ -1,6 +1,14 @@
 # Resumo IA 
 
 ### Neurônios 
+
+Um neurônio artificial é uma unidade básica de processamento de informações em uma rede neural artificial (RNA). Ele é inspirado no neurônio biológico, que é a unidade fundamental do sistema nervoso central dos animais. O neurônio artificial recebe uma ou mais entradas (inputs) que são multiplicadas pelos seus respectivos pesos (weights). Esses pesos são ajustados durante o treinamento da rede, de modo que o neurônio possa produzir a saída (output) desejada para uma determinada entrada.
+
+O neurônio também inclui uma função de ativação (activation function) que é aplicada à soma ponderada das entradas e pesos. Essa função é responsável por determinar se o neurônio deve ou não disparar, ou seja, produzir um sinal de saída. Existem várias funções de ativação comuns, como a função sigmoide, ReLU e tangente hiperbólica.
+
+Em uma rede neural, vários neurônios artificiais são conectados em camadas, formando uma arquitetura de rede neural. As camadas de neurônios artificiais são conectadas por sinapses artificiais, que permitem que as informações fluam entre as camadas.
+Em resumo, um neurônio artificial é a unidade básica de processamento em uma RNA, capaz de receber informações de entrada, computar uma soma ponderada e aplicar uma função de ativação para produzir uma saída. Ele é essencial para a construção de redes neurais capazes de resolver problemas complexos de aprendizado de máquina.
+
 - Um neurônio artificial computa uma função linear (z = Wx + b) seguida por uma função de ativação. 
 - A função linear combina os valores de entrada (x) com os pesos (W) e o bias (b) do neurônio. 
 - A função de ativação aplica uma transformação não linear ao resultado da função linear e determina a saída do neurônio. 
