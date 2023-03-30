@@ -121,9 +121,13 @@ A alternativa (d) não é necessariamente correta porque reduzir a regularizaç�
 
 # Questoes Teste
 
-**1) O que é uma rede neural convolucional?**
+**1) O que é uma rede neural convolucional (CNN) e em que situações ela é comumente utilizada? Explique como funciona o processo de convolução em uma CNN.**
 
-Uma rede neural convolucional (Convolutional Neural Network, CNN) é um tipo de rede neural artificial que é especialmente projetada para processar dados que têm uma estrutura de grade, como imagens e vídeos. A CNN é composta de várias camadas, incluindo camadas de convolução, camadas de pooling e camadas totalmente conectadas, que trabalham juntas para extrair recursos e padrões importantes dos dados de entrada.
+Uma rede neural convolucional (CNN) é um tipo de rede neural artificial que é especialmente adequada para processamento de imagens. A principal ideia por trás das CNNs é a capacidade de aprender e identificar características importantes e relevantes em uma imagem, o que é crucial em tarefas de visão computacional, como reconhecimento de objetos, detecção de rostos e identificação de caracteres em imagens de texto.
+
+O processo de convolução em uma CNN é um dos principais métodos para identificar essas características. Basicamente, ele consiste em aplicar um filtro (também chamado de kernel) à imagem original para extrair recursos importantes. O filtro desliza pela imagem, multiplicando os valores de pixel do filtro pelos valores correspondentes na imagem e somando-os para produzir um único valor na matriz resultante, chamada de "mapa de características". O processo é repetido várias vezes com diferentes filtros, para identificar diferentes características em diferentes áreas da imagem.
+
+Uma das principais vantagens das CNNs é que elas podem ser treinadas em grandes conjuntos de dados para reconhecer recursos relevantes de forma automática, sem a necessidade de uma programação manual. Além disso, as CNNs também têm a capacidade de lidar com imagens de diferentes tamanhos, o que as torna úteis em aplicações onde as imagens têm tamanhos variáveis. As CNNs são comumente usadas em várias aplicações de visão computacional, como reconhecimento de rostos, identificação de objetos em imagens, classificação de imagens, detecção de objetos em tempo real, entre outras.
 
 
 **2) Explique a diferença entre overfitting e underfitting em redes neurais.**
@@ -176,3 +180,24 @@ A avaliação da performance de uma rede neural é uma etapa crítica no process
 - Matriz de confusão: é uma matriz que mostra o número de exemplos classificados corretamente e erroneamente em cada classe. É útil para visualizar a distribuição de erros do modelo e identificar possíveis padrões de confusão.
 
 Além dessas métricas, também é importante considerar outras medidas de performance, como tempo de treinamento, tamanho do modelo e facilidade de interpretação. Em geral, a escolha das métricas de performance deve ser feita com base no objetivo do modelo e na natureza dos dados envolvidos.
+
+
+**11) Qual é a diferença entre uma rede neural de camada única e uma rede neural de múltiplas camadas? Em que situações cada uma delas pode ser mais indicada?**
+
+Uma rede neural de camada única é composta por apenas uma camada de neurônios, enquanto uma rede neural de múltiplas camadas é composta por duas ou mais camadas de neurônios, incluindo uma camada de entrada, uma ou mais camadas intermediárias e uma camada de saída.
+
+Uma rede neural de camada única é mais simples e geralmente é usada para problemas mais simples, como classificação binária ou regressão. Ela pode ser mais rápida e mais fácil de treinar do que uma rede neural de múltiplas camadas. No entanto, ela pode ter problemas para lidar com problemas mais complexos e pode não ser capaz de capturar relações não lineares nos dados.
+
+Uma rede neural de múltiplas camadas, por outro lado, pode lidar com problemas mais complexos, como classificação de imagem ou processamento de linguagem natural. Ela pode aprender representações hierárquicas dos dados, o que permite a captura de relações não lineares em dados complexos. No entanto, ela pode ser mais lenta e mais difícil de treinar do que uma rede neural de camada única.
+
+**12) Explique como funciona o processo de agrupamento (pooling) em redes neurais convolucionais e qual sua importância na classificação de imagens.** 
+
+O processo de agrupamento, também conhecido como pooling, é uma etapa importante em redes neurais convolucionais (CNNs) para a classificação de imagens. A função principal do pooling é reduzir a dimensionalidade dos mapas de características produzidos pela etapa de convolução, tornando a rede mais eficiente computacionalmente e menos propensa a overfitting.
+
+O pooling é aplicado após a etapa de convolução e consiste em dividir o mapa de características em regiões não sobrepostas e aplicar uma função de redução em cada região. A função de redução pode ser, por exemplo, o máximo, a média ou o valor mais frequente dentro da região.
+
+Existem dois tipos comuns de pooling: o max pooling e o average pooling. No max pooling, é selecionado o valor máximo de cada região, enquanto no average pooling é feita a média dos valores da região. Ambos os métodos reduzem a dimensionalidade do mapa de características.
+
+O pooling tem várias vantagens na classificação de imagens. Ele ajuda a reduzir o número de parâmetros da rede, tornando-a mais eficiente computacionalmente. Além disso, o pooling torna a rede menos sensível a pequenas variações nas imagens, tornando-a mais robusta a ruídos e variações de iluminação. Por fim, o pooling ajuda a capturar características invariantes de posição na imagem, ou seja, características que são importantes independentemente da sua posição na imagem.
+
+No entanto, é importante notar que o uso de pooling pode levar à perda de informações importantes em algumas situações, especialmente em tarefas de segmentação de imagens. Por isso, o uso de pooling pode ser ajustado ou até mesmo dispensado em algumas arquiteturas de CNNs.
