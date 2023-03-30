@@ -61,6 +61,27 @@ Em termos de segurança para os usuários da aeronave, o melhor algoritmo seria 
 
 Um alto número de falsos-positivos implica em um alto número de alarmes falsos, o que pode levar a uma diminuição da confiança no algoritmo e a um aumento dos custos de manutenção preventiva. Já um alto número de falsos-negativos implica em anomalias não detectadas, o que pode levar a uma falha ou acidente da aeronave, resultando em perdas financeiras e humanas.
 
+### Overfitting e underfitting 
+
+Overfitting e underfitting são dois problemas comuns no treinamento de redes neurais artificiais (RNAs).
+
+Overfitting ocorre quando a RNA se ajusta muito bem aos dados de treinamento, chegando a decorar o conjunto de dados, mas apresenta baixa capacidade de generalização para novos dados. Em outras palavras, a RNA se adapta muito bem aos exemplos de treinamento, mas não consegue capturar padrões gerais que possam ser aplicados a dados desconhecidos. Isso ocorre porque a RNA aprende ruídos e características irrelevantes do conjunto de dados de treinamento, em vez de padrões gerais.
+
+Underfitting, por outro lado, ocorre quando a RNA não é capaz de capturar bem os padrões presentes no conjunto de dados de treinamento. A RNA apresenta baixo desempenho tanto no conjunto de treinamento quanto no conjunto de validação e, portanto, não consegue generalizar para novos dados.
+
+Algumas arquiteturas que poderiam ter problemas de overfitting e underfitting incluem redes totalmente conectadas (Fully Connected Networks), redes neurais convolucionais (Convolutional Neural Networks), e redes neurais recorrentes (Recurrent Neural Networks).
+
+Para resolver o problema de overfitting, existem várias técnicas, como:
+
+Regularização: adicionar termos de regularização à função de custo da RNA para penalizar pesos grandes e evitar overfitting. Exemplos de técnicas de regularização incluem L1 e L2 regularization, Dropout e Early Stopping.
+Data Augmentation: gerar novos exemplos de treinamento a partir dos exemplos existentes, adicionando distorções, rotações, zoom e outros tipos de transformações.
+Redução da complexidade da RNA: reduzir a quantidade de camadas e neurônios da RNA ou aplicar técnicas como a compressão de parâmetros.
+Para resolver o problema de underfitting, as principais soluções incluem:
+
+Aumento da complexidade da RNA: aumentar o número de camadas e neurônios na RNA ou usar arquiteturas mais complexas.
+Melhorar a qualidade dos dados de treinamento: aumentar a quantidade de dados disponíveis para treinamento ou melhorar a qualidade dos dados existentes, removendo dados duplicados, outliers ou dados mal rotulados.
+Reduzir a regularização: reduzir a intensidade dos termos de regularização ou eliminá-los completamente, se necessário.
+Em resumo, overfitting e underfitting são problemas comuns no treinamento de RNAs, mas podem ser solucionados com técnicas específicas de regularização, aumento ou redução da complexidade da RNA, melhoria da qualidade dos dados de treinamento e ajustes na intensidade da regularização.
 
 
 
