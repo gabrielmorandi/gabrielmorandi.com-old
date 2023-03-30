@@ -170,12 +170,9 @@ Já o treinamento não supervisionado em redes neurais é realizado sem dados ro
 
 A avaliação da performance de uma rede neural é uma etapa crítica no processo de desenvolvimento de um modelo. Existem várias métricas que podem ser usadas para avaliar a performance de uma rede neural, dependendo da natureza do problema e dos dados envolvidos. Algumas das métricas mais comuns incluem:
 
-Acurácia: é uma medida simples e direta da porcentagem de exemplos classificados corretamente pelo modelo.
-
-Precisão e revocação: são métricas que medem a qualidade da classificação binária (por exemplo, se uma imagem contém um objeto específico ou não). A precisão mede a proporção de verdadeiros positivos (objetos corretamente identificados) em relação ao total de positivos (objetos identificados pelo modelo), enquanto a revocação mede a proporção de verdadeiros positivos em relação ao total de exemplos positivos.
-
-F1 score: é uma métrica que combina precisão e revocação em uma única medida. É útil para avaliar a performance em problemas de classificação binária desbalanceados.
-
-Matriz de confusão: é uma matriz que mostra o número de exemplos classificados corretamente e erroneamente em cada classe. É útil para visualizar a distribuição de erros do modelo e identificar possíveis padrões de confusão.
+- Acurácia: é uma medida simples e direta da porcentagem de exemplos classificados corretamente pelo modelo.
+- Precisão e revocação: são métricas que medem a qualidade da classificação binária (por exemplo, se uma imagem contém um objeto específico ou não). A precisão mede a proporção de verdadeiros positivos (objetos corretamente identificados) em relação ao total de positivos (objetos identificados pelo modelo), enquanto a revocação mede a proporção de verdadeiros positivos em relação ao total de exemplos positivos.
+- F1 score: é uma métrica que combina precisão e revocação em uma única medida. É útil para avaliar a performance em problemas de classificação binária desbalanceados.
+- Matriz de confusão: é uma matriz que mostra o número de exemplos classificados corretamente e erroneamente em cada classe. É útil para visualizar a distribuição de erros do modelo e identificar possíveis padrões de confusão.
 
 Além dessas métricas, também é importante considerar outras medidas de performance, como tempo de treinamento, tamanho do modelo e facilidade de interpretação. Em geral, a escolha das métricas de performance deve ser feita com base no objetivo do modelo e na natureza dos dados envolvidos.
