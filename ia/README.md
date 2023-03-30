@@ -47,9 +47,8 @@ O k-means tem várias aplicações em problemas reais, tais como:
 - Reconhecimento de padrões em imagens: o k-means é usado para agrupar pixels em uma imagem com base em sua cor ou intensidade, ajudando a identificar objetos ou padrões em uma imagem. Por exemplo, uma imagem pode ser dividida em regiões de fundo e primeiro plano, ou em regiões que correspondem a diferentes objetos ou formas. 
 
 - Classificação de documentos: o k-means é usado para agrupar documentos semelhantes em clusters, ajudando a classificar e organizar grandes conjuntos de dados textuais. Por exemplo, uma coleção de notícias pode ser agrupada em categorias como esportes, política, economia, etc., ou uma biblioteca digital pode ser agrupada em temas como literatura, história, ciência, etc. 
- 
- 
- ### TFP e TFN
+
+### TFP e TFN
 
 Para comparar diferentes algoritmos de detecção de anomalias em aeronaves, podemos usar dois critérios principais: economia e segurança. A economia se refere ao equilíbrio entre o custo de manutenção preventiva e corretiva, enquanto a segurança se refere à capacidade de evitar falhas graves na aeronave. Assim, um bom algoritmo deve minimizar os falsos-negativos e os falsos-positivos, ou seja, identificar corretamente as anomalias e evitar alarmes desnecessários.
 
