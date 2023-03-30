@@ -149,11 +149,13 @@ O gradiente descendente é um algoritmo de otimização que é usado para ajusta
 O algoritmo funciona calculando o gradiente da função de custo em relação aos pesos da rede, e em seguida, atualizando os pesos proporcionalmente à magnitude do gradiente, de forma a minimizar a função de custo. A ideia é caminhar na direção oposta ao gradiente, de forma a se aproximar do mínimo da função de custo. O processo é repetido várias vezes até que a função de custo seja minimizada ou atinja um ponto de parada.
 
 **7) O que é a função de ativação em um neurônio artificial?**
+
 A função de ativação em um neurônio artificial é responsável por determinar a saída do neurônio com base em sua entrada. A função de ativação é aplicada ao resultado da soma ponderada das entradas do neurônio e dos pesos correspondentes.
 
 A função de ativação pode ser de diferentes tipos, como a função sigmoide, ReLU, tangente hiperbólica, entre outras. Cada função de ativação tem suas próprias características e propriedades, que podem ser mais adequadas para diferentes tipos de problemas e arquiteturas de rede.
 
 **8) O que é regularização em redes neurais e qual sua função?**
+
 A regularização em redes neurais é uma técnica usada para reduzir o overfitting, que ocorre quando a rede neural se ajusta muito bem aos dados de treinamento, mas não generaliza bem para novos dados. A regularização pode ajudar a melhorar a capacidade de generalização da rede neural, limitando sua complexidade.
 
 Existem vários tipos de regularização, como L1, L2 e Dropout. A regularização L1 e L2 adicionam um termo à função de custo que penaliza os pesos da rede neural com valores muito altos, enquanto a regularização Dropout remove aleatoriamente algumas unidades da rede durante o treinamento, forçando a rede a aprender características mais robustas e generalizáveis.
@@ -165,6 +167,7 @@ O treinamento supervisionado em redes neurais envolve o uso de dados rotulados, 
 Já o treinamento não supervisionado em redes neurais é realizado sem dados rotulados, ou seja, sem uma saída desejada correspondente. O objetivo do treinamento é encontrar padrões e estruturas nos dados de entrada que possam ser úteis para tarefas posteriores, como classificação ou clusterização.
 
 **10) Como avaliar a performance de uma rede neural?**
+
 A avaliação da performance de uma rede neural é uma etapa crítica no processo de desenvolvimento de um modelo. Existem várias métricas que podem ser usadas para avaliar a performance de uma rede neural, dependendo da natureza do problema e dos dados envolvidos. Algumas das métricas mais comuns incluem:
 
 Acurácia: é uma medida simples e direta da porcentagem de exemplos classificados corretamente pelo modelo.
