@@ -117,3 +117,62 @@ A alternativa (b) afirma que treinar uma rede neural maior pode ajudar a obter m
 #### alternativa d
 
 A alternativa (d) não é necessariamente correta porque reduzir a regularização pode ajudar a melhorar a performance no treino e teste, mas também pode levar a overfitting. A regularização é uma técnica utilizada para evitar overfitting, e a sua redução pode levar a um modelo mais complexo e com maior variância, aumentando o risco de overfitting. Portanto, a redução da regularização deve ser feita com cautela, e apenas se for realmente necessário para melhorar a performance do modelo.
+
+
+# Questoes Teste
+
+**1) O que é uma rede neural convolucional?**
+
+Uma rede neural convolucional (Convolutional Neural Network, CNN) é um tipo de rede neural artificial que é especialmente projetada para processar dados que têm uma estrutura de grade, como imagens e vídeos. A CNN é composta de várias camadas, incluindo camadas de convolução, camadas de pooling e camadas totalmente conectadas, que trabalham juntas para extrair recursos e padrões importantes dos dados de entrada.
+
+
+**2) Explique a diferença entre overfitting e underfitting em redes neurais.**
+
+Overfitting e underfitting são problemas comuns no treinamento de redes neurais. Overfitting ocorre quando o modelo se ajusta demais aos dados de treinamento, levando a uma performance ruim em novos dados, enquanto underfitting ocorre quando o modelo não consegue se ajustar bem aos dados de treinamento, levando a uma performance ruim em ambos, dados de treinamento e novos dados. O overfitting pode ser evitado por meio de técnicas como regularização, aumento de dados e seleção cuidadosa de hiperparâmetros, enquanto o underfitting pode ser resolvido aumentando a capacidade do modelo.
+
+**3) O que é backpropagation?**
+
+Backpropagation é um algoritmo utilizado para calcular o gradiente da função de erro em uma rede neural durante o treinamento. O algoritmo funciona propagando o erro da camada de saída para a camada de entrada, ajustando os pesos de cada neurônio ao longo do caminho para minimizar a função de erro. Isso é feito usando a regra da cadeia da derivada para calcular os gradientes da função de erro em relação aos pesos da rede.
+
+**4) O que é um neurônio artificial?**
+
+Um neurônio artificial é uma unidade fundamental em uma rede neural, que é projetada para processar informações e transmitir sinais. É composto de um conjunto de entradas, um conjunto de pesos e um valor de viés, e utiliza uma função de ativação para produzir uma saída. A saída do neurônio é determinada pelo somatório das entradas multiplicadas pelos pesos, mais o valor de viés.
+
+**5) Quais são os principais desafios no treinamento de redes neurais profundas?**
+
+Os principais desafios no treinamento de redes neurais profundas incluem a explosão do gradiente, a dissipação do gradiente, o overfitting e a seleção de hiperparâmetros. A explosão do gradiente ocorre quando os gradientes se tornam muito grandes e instáveis, enquanto a dissipação do gradiente ocorre quando os gradientes se tornam muito pequenos para serem efetivamente propagados pela rede. O overfitting é um problema comum em redes neurais profundas, que pode ser evitado com o uso de regularização, enquanto a seleção de hiperparâmetros pode ser um desafio, pois envolve escolher os valores corretos para parâmetros como a taxa de aprendizado, o tamanho do lote e o número de camadas.
+
+**6) Explique o que é o gradiente descendente.**
+
+O gradiente descendente é um algoritmo de otimização que é usado para ajustar os pesos de uma rede neural durante o treinamento. O objetivo do gradiente descendente é minimizar uma função de custo que é calculada com base nas diferenças entre as saídas reais e as saídas previstas pela rede neural.
+
+O algoritmo funciona calculando o gradiente da função de custo em relação aos pesos da rede, e em seguida, atualizando os pesos proporcionalmente à magnitude do gradiente, de forma a minimizar a função de custo. A ideia é caminhar na direção oposta ao gradiente, de forma a se aproximar do mínimo da função de custo. O processo é repetido várias vezes até que a função de custo seja minimizada ou atinja um ponto de parada.
+
+**7) O que é a função de ativação em um neurônio artificial?**
+A função de ativação em um neurônio artificial é responsável por determinar a saída do neurônio com base em sua entrada. A função de ativação é aplicada ao resultado da soma ponderada das entradas do neurônio e dos pesos correspondentes.
+
+A função de ativação pode ser de diferentes tipos, como a função sigmoide, ReLU, tangente hiperbólica, entre outras. Cada função de ativação tem suas próprias características e propriedades, que podem ser mais adequadas para diferentes tipos de problemas e arquiteturas de rede.
+
+**8) O que é regularização em redes neurais e qual sua função?**
+A regularização em redes neurais é uma técnica usada para reduzir o overfitting, que ocorre quando a rede neural se ajusta muito bem aos dados de treinamento, mas não generaliza bem para novos dados. A regularização pode ajudar a melhorar a capacidade de generalização da rede neural, limitando sua complexidade.
+
+Existem vários tipos de regularização, como L1, L2 e Dropout. A regularização L1 e L2 adicionam um termo à função de custo que penaliza os pesos da rede neural com valores muito altos, enquanto a regularização Dropout remove aleatoriamente algumas unidades da rede durante o treinamento, forçando a rede a aprender características mais robustas e generalizáveis.
+
+**9) Qual é a diferença entre treinamento supervisionado e não supervisionado em redes neurais?**
+
+O treinamento supervisionado em redes neurais envolve o uso de dados rotulados, ou seja, dados com exemplos de entrada e a saída desejada correspondente, como um conjunto de imagens e suas respectivas categorias. O objetivo do treinamento é ajustar os pesos da rede de forma a minimizar a diferença entre as saídas previstas e as saídas reais.
+
+Já o treinamento não supervisionado em redes neurais é realizado sem dados rotulados, ou seja, sem uma saída desejada correspondente. O objetivo do treinamento é encontrar padrões e estruturas nos dados de entrada que possam ser úteis para tarefas posteriores, como classificação ou clusterização.
+
+**10) Como avaliar a performance de uma rede neural?**
+A avaliação da performance de uma rede neural é uma etapa crítica no processo de desenvolvimento de um modelo. Existem várias métricas que podem ser usadas para avaliar a performance de uma rede neural, dependendo da natureza do problema e dos dados envolvidos. Algumas das métricas mais comuns incluem:
+
+Acurácia: é uma medida simples e direta da porcentagem de exemplos classificados corretamente pelo modelo.
+
+Precisão e revocação: são métricas que medem a qualidade da classificação binária (por exemplo, se uma imagem contém um objeto específico ou não). A precisão mede a proporção de verdadeiros positivos (objetos corretamente identificados) em relação ao total de positivos (objetos identificados pelo modelo), enquanto a revocação mede a proporção de verdadeiros positivos em relação ao total de exemplos positivos.
+
+F1 score: é uma métrica que combina precisão e revocação em uma única medida. É útil para avaliar a performance em problemas de classificação binária desbalanceados.
+
+Matriz de confusão: é uma matriz que mostra o número de exemplos classificados corretamente e erroneamente em cada classe. É útil para visualizar a distribuição de erros do modelo e identificar possíveis padrões de confusão.
+
+Além dessas métricas, também é importante considerar outras medidas de performance, como tempo de treinamento, tamanho do modelo e facilidade de interpretação. Em geral, a escolha das métricas de performance deve ser feita com base no objetivo do modelo e na natureza dos dados envolvidos.
