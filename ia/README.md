@@ -44,3 +44,23 @@ O k-means tem várias aplicações em problemas reais, tais como:
  ### Taxa de Falsos Positivos (TFP) e a Taxa de Falsos Negativos (TFN)
 
 Para comparar diferentes algoritmos de detecção de anomalias em aeronaves, podemos usar dois critérios principais: economia e segurança. A economia se refere ao equilíbrio entre o custo de manutenção preventiva e corretiva, enquanto a segurança se refere à capacidade de evitar falhas graves na aeronave. Assim, um bom algoritmo deve minimizar os falsos-negativos e os falsos-positivos, ou seja, identificar corretamente as anomalias e evitar alarmes desnecessários.
+
+Para calcular a taxa de falsos positivos (TFP) e a taxa de falsos negativos (TFN), podemos usar as seguintes fórmulas:
+
+- TFP = número de falsos positivos / (número de verdadeiros negativos + número de falsos positivos)
+
+- TFN = número de falsos negativos / (número de verdadeiros positivos + número de falsos negativos)
+
+Para o Algoritmo A, a TFP é de 10/(verdadeiros negativos + 10) e a TFN é de 40/(verdadeiros positivos + 40). Para o Algoritmo B, a TFP é de 42/(verdadeiros negativos + 42) e a TFN é de 8/(verdadeiros positivos + 8).
+
+Não temos informações sobre o número de verdadeiros positivos e negativos, então não podemos calcular as taxas de verdadeiros positivos e negativos ou a acurácia dos algoritmos. No entanto, podemos comparar as TFPs e TFNs dos dois algoritmos.
+
+Em termos de economia na manutenção da aeronave, o melhor algoritmo seria aquele com menor número de falsos negativos, ou seja, aquele que detecta com mais precisão as anomalias. Portanto, o Algoritmo A é melhor nesse aspecto, pois apresentou menor número de falsos negativos.
+
+Em termos de segurança para os usuários da aeronave, o melhor algoritmo seria aquele com menor número de falsos positivos, ou seja, aquele que não gera muitos alarmes falsos. Portanto, o Algoritmo B é melhor nesse aspecto, pois apresentou menor número de falsos positivos.
+
+Um alto número de falsos-positivos implica em um alto número de alarmes falsos, o que pode levar a uma diminuição da confiança no algoritmo e a um aumento dos custos de manutenção preventiva. Já um alto número de falsos-negativos implica em anomalias não detectadas, o que pode levar a uma falha ou acidente da aeronave, resultando em perdas financeiras e humanas.
+
+
+
+
