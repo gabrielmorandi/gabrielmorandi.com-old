@@ -19,4 +19,24 @@ O PCA é útil para aplicações em problemas reais que envolvem grandes quantid
 - Análise de dados financeiros: o PCA é usado para reduzir a dimensionalidade de dados financeiros complexos, como séries temporais de ações, ajudando a destacar as tendências e identificar oportunidades de investimento. O PCA transforma os dados financeiros em um conjunto de componentes principais, que são combinações lineares dos dados originais. Os componentes principais que capturam a maior parte da variância podem ser usados para analisar os fatores que afetam o mercado e as correlações entre diferentes ativos. 
 - Análise de dados genômicos: o PCA é usado para analisar e visualizar grandes conjuntos de dados genômicos, ajudando a identificar padrões e relacionamentos entre genes. O PCA transforma os dados genômicos em um conjunto de componentes principais, que são combinações lineares dos dados originais. Os componentes principais que capturam a maior parte da variância podem ser usados para agrupar os genes com base em sua similaridade e explorar as diferenças entre grupos de genes. 
 
+
+### K-means 
+
+K-means é um algoritmo de aprendizado não supervisionado que visa particionar um conjunto de dados em k grupos, onde cada dado pertence ao grupo mais próximo da média (ou centróide) do grupo. Algumas das principais motivações para usar o k-means são: 
+
+- Agrupamento de dados: o k-means pode ajudar a identificar padrões e similaridades nos dados, criando clusters que representam grupos homogêneos. Por exemplo, o k-means pode ser usado para segmentar clientes com base em suas características ou preferências, ou para classificar documentos com base em seus tópicos. 
+
+- Redução de dimensionalidade: o k-means pode ajudar a reduzir a complexidade e o ruído dos dados, eliminando as dimensões que não contribuem para a variância dos dados e mantendo as dimensões que são mais relevantes para os clusters. Por exemplo, o k-means pode ser usado para comprimir imagens, reduzindo o número de cores usadas para representá-las. 
+
+ 
+
+O k-means tem várias aplicações em problemas reais, tais como: 
+
+ 
+
+- Marketing: o k-means é usado para segmentar clientes em grupos com base em seu comportamento de compra, ajudando as empresas a criar campanhas de marketing direcionadas. Por exemplo, uma empresa pode agrupar seus clientes em grupos de alto, médio e baixo valor, e oferecer diferentes incentivos ou promoções para cada grupo. 
+
+- Reconhecimento de padrões em imagens: o k-means é usado para agrupar pixels em uma imagem com base em sua cor ou intensidade, ajudando a identificar objetos ou padrões em uma imagem. Por exemplo, uma imagem pode ser dividida em regiões de fundo e primeiro plano, ou em regiões que correspondem a diferentes objetos ou formas. 
+
+- Classificação de documentos: o k-means é usado para agrupar documentos semelhantes em clusters, ajudando a classificar e organizar grandes conjuntos de dados textuais. Por exemplo, uma coleção de notícias pode ser agrupada em categorias como esportes, política, economia, etc., ou uma biblioteca digital pode ser agrupada em temas como literatura, história, ciência, etc. 
  
