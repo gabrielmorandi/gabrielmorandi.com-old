@@ -92,7 +92,7 @@ Reduzir a regularização: reduzir a intensidade dos termos de regularização o
 Em resumo, overfitting e underfitting são problemas comuns no treinamento de RNAs, mas podem ser solucionados com técnicas específicas de regularização, aumento ou redução da complexidade da RNA, melhoria da qualidade dos dados de treinamento e ajustes na intensidade da regularização.
 
 
-### Erros Questão 5
+### Acertos Questão 5
 
 #### alternativa a)
 O erro de 2,0% no conjunto de treinamento indica que o modelo não está se ajustando bem aos dados durante o processo de treinamento, ou seja, ele não está conseguindo aprender a relação entre os dados de entrada e saída. Isso sugere que o modelo está com um alto viés (bias), ou seja, ele está muito simplificado e não consegue representar de forma adequada a complexidade dos dados.
@@ -109,3 +109,12 @@ Ao aumentar a base de treinamento, o modelo tem acesso a mais exemplos de dados,
 
 No entanto, é importante notar que simplesmente aumentar o tamanho do conjunto de dados não é suficiente para garantir uma melhor performance do modelo. A qualidade dos dados é importante, bem como a distribuição dos dados de treinamento em relação aos dados de teste ou aplicação. É importante garantir que os dados de treinamento sejam representativos dos dados que o modelo encontrará na prática. Além disso, outras técnicas, como regularização e validação cruzada, podem ser usadas em conjunto com o aumento da base de treinamento para obter um modelo melhor regularizado e com uma melhor performance geral.
 
+### Erros Questão 5
+
+#### alternativa b
+
+A alternativa (b) afirma que treinar uma rede neural maior pode ajudar a obter melhor performance no treinamento. Embora isso possa ser verdade em alguns casos, não há garantia de que aumentar o tamanho da rede irá melhorar a performance do modelo, pois isso pode levar a overfitting, ou seja, o modelo pode ficar muito bom em prever os dados de treinamento, mas não generalizar bem para dados novos. Portanto, é necessário ter cuidado ao aumentar o tamanho da rede e avaliar os trade-offs entre bias e variância.
+
+#### alternativa d
+
+A alternativa (d) não é necessariamente correta porque reduzir a regularização pode ajudar a melhorar a performance no treino e teste, mas também pode levar a overfitting. A regularização é uma técnica utilizada para evitar overfitting, e a sua redução pode levar a um modelo mais complexo e com maior variância, aumentando o risco de overfitting. Portanto, a redução da regularização deve ser feita com cautela, e apenas se for realmente necessário para melhorar a performance do modelo.
